@@ -23,10 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, 'antialiased min-h-screen pt-16')}>
-        {/* <Providers> */}
-        <Navbar />
-        {children}
-        {/* </Providers> */}
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
